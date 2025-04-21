@@ -1,0 +1,7 @@
+streamlit
+pandas
+PyMuPDF
+sentence-transformers
+faiss-cpu
+matplotlib
+requests
