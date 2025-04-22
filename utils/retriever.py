@@ -7,7 +7,7 @@ golden_df = pd.read_csv("golden_clauses.csv")
 texts = golden_df["standard_clause"].tolist()
 types = golden_df["clause_type"].tolist()
 
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer("Models/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/c9745ed1d9f207416be6d2e6f8de32d1f16199bf")
 embeddings = embedder.encode(texts, convert_to_numpy=True)
 index = faiss.IndexFlatL2(embeddings.shape[1])
 index.add(embeddings)
