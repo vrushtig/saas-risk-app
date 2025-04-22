@@ -15,6 +15,10 @@ if uploaded_file:
 
     with st.spinner("Analyzing with Gemini..."):
         df = evaluate_clauses_rag(clauses, api_key=st.secrets["GEMINI_API_KEY"])
+        required_cols = ["retrieved_type", "favorability", "risk_score", "deviation", "recommendation"]
+        for col in required_cols:
+            if col not in df.columns:
+                df[col] = "N/A"
         df["deviation"] = df["deviation"].astype(str)
         df["recommendation"] = df["recommendation"].astype(str)
 
