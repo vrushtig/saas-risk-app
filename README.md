@@ -40,6 +40,12 @@ This isn’t just a prompt — it's a full product pipeline.
 
 ---
 
+## 🚀 Try the Live App Here
+
+- https://business-risk-app-for-saas-contracts.streamlit.app
+
+---
+
 ## 👋 About Me
 
 I’m Vrushti Gangwal — MSIS Grad @ NYU.  
@@ -47,3 +53,5 @@ This started as a capstone, but I built it like a real product because it deserv
 
 
 📫 [LinkedIn](www.linkedin.com/in/vrushti-gangwal-3844ab1b3)
+
+https://business-risk-app-for-saas-contracts.streamlit.app
